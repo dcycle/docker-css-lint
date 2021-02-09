@@ -4,7 +4,7 @@ Lint CSS with [CSSLint](https://github.com/CSSLint/csslint).
 
 For example:
 
-    docker run -v $(pwd)/example:/app/code dcycle/css-lint --help
-    docker run -v $(pwd)/example:/app/code dcycle/css-lint .
+    docker run -v $(pwd)/example:/app/code dcycle/css-lint:1 --help
+    docker run -v $(pwd)/example:/app/code dcycle/css-lint:1 .
 
 See [this project on the Docker Hub](https://hub.docker.com/r/dcycle/css-lint/).
