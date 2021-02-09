@@ -24,13 +24,13 @@ VERSION='1.0'
 # Start by getting the latest version of the official drupal image
 docker pull node
 # Rebuild the entire thing
-docker build --no-cache -t dcycle/"$PROJECT":"$VERSION" .
-docker build -t dcycle/"$PROJECT":"$MAJORVERSION" .
-docker build -t dcycle/"$PROJECT":"$MAJORVERSION".$DATE .
-docker build -t dcycle/"$PROJECT":"$VERSION".$DATE .
+docker build --no-cache -t dcycle/"$PROJECT:$VERSION" .
+docker build -t dcycle/"$PROJECT:$MAJORVERSION" .
+docker build -t dcycle/"$PROJECT:$MAJORVERSION.$DATE" .
+docker build -t dcycle/"$PROJECT:$VERSION.$DATE" .
 docker login -u"$DOCKERHUBUSER" -p"$DOCKERHUBPASS"
-docker push dcycle/"$PROJECT":"$VERSION"
-docker push dcycle/"$PROJECT":"$MAJORVERSION"
-docker push dcycle/"$PROJECT":"$VERSION"."$DATE"
-docker push dcycle/"$PROJECT":"$MAJORVERSION"."$DATE"
+docker push dcycle/"$PROJECT:$VERSION"
+docker push dcycle/"$PROJECT:$MAJORVERSION"
+docker push dcycle/"$PROJECT:$VERSION.$DATE"
+docker push dcycle/"$PROJECT:$MAJORVERSION.$DATE"
 # No longer using the latest tag, use the major version tag instead.
