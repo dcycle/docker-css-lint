@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/dcycle/docker-css-lint.svg?style=svg)](https://circleci.com/gh/dcycle/docker-css-lint)
+[![GitHub Actions](https://github.com/dcycle/docker-css-lint/actions/workflows/config.yml/badge.svg)](https://github.com/dcycle/docker-css-lint/actions/workflows/config.yml)
 
 Lint CSS with [CSSLint](https://github.com/CSSLint/csslint).
 
