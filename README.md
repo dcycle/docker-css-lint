@@ -1,4 +1,4 @@
-[![GitHub Actions](https://github.com/dcycle/docker-css-lint/actions/workflows/config.yml/badge.svg)](https://github.com/dcycle/docker-css-lint/actions/workflows/config.yml)
+[![GitHub Actions](https://github.com/dcycle/docker-css-lint/actions/workflows/config.yml/badge.svg)](../../actions/workflows/config.yml)
 
 Lint CSS with [CSSLint](https://github.com/CSSLint/csslint).
 
